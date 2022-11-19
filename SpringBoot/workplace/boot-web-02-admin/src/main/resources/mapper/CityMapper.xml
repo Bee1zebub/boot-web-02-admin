@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.admin.mapper.CityMapper">
+<!--使用useGeneratedKeys="true" keyProperty="id"将数据库返回的主键值赋值给City的id属性-->
+   <!-- <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert into city(`name`,`state`,`country`) values(#{name},#{state},#{country})
+    </insert>-->
+
+</mapper>

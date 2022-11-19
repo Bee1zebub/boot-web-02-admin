@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.admin.mapper.AccountMapper">
+
+    <resultMap id="accountResultMap" type="account">
+        <result property="id" column="account_id"/>
+    </resultMap>
+
+    <select id="getAcct" resultType="account" resultMap="accountResultMap">
+    select * from account_tbl where account_id = #{id}
+    </select>
+</mapper>
